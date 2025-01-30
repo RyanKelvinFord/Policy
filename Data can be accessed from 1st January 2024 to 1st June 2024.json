@@ -1,0 +1,43 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ids": "https://w3id.org/idsa/core/",
+        "idsc": "https://w3id.org/idsa/code/"
+    },
+    "@type": "ids:Permission",
+    "@id": "https://w3id.org/idsa/autogen/permission/3e8cfc3f-5eaf-4f5b-8b9c-953c5fcbf1d2",
+    "ids:description": [
+        {
+            "@value": "Access to data is permitted from January 1, 2024, to June 1, 2024.",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+    ],
+    "ids:title": [
+        {
+            "@value": "Time-limited Data Access",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+    ],
+    "ids:action": [
+        {
+            "@id": "https://w3id.org/idsa/code/USE"
+        }
+    ],
+    "ids:constraint": [
+        {
+            "@type": "ids:Constraint",
+            "@id": "https://w3id.org/idsa/autogen/constraint/7c3b6e9d-7f2e-44b3-b588-8a1f9c3e0c6a",
+            "ids:operator": {
+                "@id": "https://w3id.org/idsa/code/DURING"
+            },
+            "ids:leftOperand": {
+                "@value": "2024-01-01T00:00:00Z",
+                "@type": "xsd:dateTime"
+            },
+            "ids:rightOperand": {
+                "@value": "2024-06-01T00:00:00Z",
+                "@type": "xsd:dateTime"
+            }
+        }
+    ]
+}

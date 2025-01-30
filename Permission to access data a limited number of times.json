@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ids": "https://w3id.org/idsa/core/",
+        "idsc": "https://w3id.org/idsa/code/"
+    },
+    "@type": "ids:Permission",
+    "@id": "https://w3id.org/idsa/autogen/permission/fc7e9c98-7f3b-4b80-8f56-9e2e55f4dca3",
+    "ids:description": [
+        {
+            "@value": "Permission to access data a limited number of times.",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+    ],
+    "ids:title": [
+        {
+            "@value": "Limited Data Access Policy",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        }
+    ],
+    "ids:action": [
+        {
+            "@id": "https://w3id.org/idsa/code/USE"
+        }
+    ],
+    "ids:constraint": [
+        {
+            "@type": "ids:Constraint",
+            "@id": "https://w3id.org/idsa/autogen/constraint/1f2b69c5-1d2a-4f59-bb8f-2f6d92b4b5b1",
+            "ids:operator": {
+                "@id": "https://w3id.org/idsa/code/LTEQ"
+            },
+            "ids:leftOperand": {
+                "@id": "https://w3id.org/idsa/code/COUNT"
+            },
+            "ids:rightOperand": {
+                "@value": "5",
+                "@type": "xsd:double"
+            }
+        }
+    ]
+}
